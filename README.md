@@ -12,16 +12,36 @@ We will search for the best coffee fit, after you have answered some basic quest
 ## API Routes
 
 | Method | Endpoint            | Response (200)                                         | Action                          |
-| ------ | ------------------- | ------------------------------------------------------ | ------------------------------- |
-||||
+| ------------ | ------------------- | ------------------------------------------------------ | ------------------------------- |
+|***AUTH ROUTES***|||
 | POST | /api/auth/signup  | { creates user **no password** }    | Creates a user after validation|       
 | POST | /api/auth/login  | { created user **no password** }  | Logs inside creates session|
-||||
-| PATCH | /api/user/add-info  | { User }  | Updates User Info |
-| DELETE | /api/user/delete  | { User }  | Updates User Info |
-||||
+| GET | /api/auth/logout  | { message: "Logged out" }  | Logs out, delete session ...|
+|***USER ROUTES***|||
+| POST | /api/user/add-info  | { User }  | Updates User Info |
+| POST | /api/user/adress/:id  | { Adress }  | Updates Adress Info |
+| Delete | /api/user/adress/:id  | { Adress }  | Deletes Adress Info |
+| DELETE | /api/user/delete  | { User }  | Deletes User |
+|***PRODUCTS ROUTES***|||
 | GET | /api/products  | [ Product ]  | Gets all Products |
 | GET | /api/products/:id  | { Product }  | Gets a Product by ID | 
+| POST | /api/products/:id/create  | { Product }  | Creates a new Product from Template |
+| PATCH | /api/products/:id/update  | { Product }  | Updates a Product by ID | 
+| DELETE | /api/products/:id/delete  | { Product }  | Deletes a Product by ID | 
+|***SUBSCRIPTION ROUTES***|||
+| POST | /api/subscription-model/create  | { Subscription Model }  | Creates Subscription Model |
+| PATCH | /api/subscription-model/update  | { Subscription Model }  | Updates Subscription Model |
+| DELETE | /api/subscription-model/delete  | { Subscription Model }  | Deletes Subscription Model |
+|***NEWSLETTER ROUTES***|||
+| POST | /api/news-letter/create  | { email }  | Creates email in Newsletter Model |
+| DELETE | /api/news-letter/delete  | { email }  | Deletes email in Newsletter Model |
+
+
+## CLIENT ROUTES
+| Endpoint            |            Action        |
+| ------------------- | ------------------------ |
+| / | shows landing-page |
+| /login | shows login-page |
 
 
 ## Model Schema
