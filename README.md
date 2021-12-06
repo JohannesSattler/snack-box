@@ -9,40 +9,61 @@ We will search for the best coffee fit, after you have answered some basic quest
 ![4-7](https://i.imgur.com/AUJOFvn.png)
 ![7-9](https://i.imgur.com/kJvsFIg.png)
 
-## API Routes
+## MVP
+  - login / signup
+  - user questions 
+  - products page
+  - subscriptions
+  - create custom subscriptions
+  - checkout
+  - orders 
+  - profile
+  - newsletter signup
+  - landing page
+
+
+## API Routes /api
 
 | Method | Endpoint            | Response (200)                                         | Action                          |
 | ------------ | ------------------- | ------------------------------------------------------ | ------------------------------- |
 |***AUTH ROUTES***|||
-| POST | /api/auth/signup  | { creates user **no password** }    | Creates a user after validation|       
-| POST | /api/auth/login  | { created user **no password** }  | Logs inside creates session|
-| GET | /api/auth/logout  | { message: "Logged out" }  | Logs out, delete session ...|
+| POST | /auth/signup  | { creates user **no password** }    | Creates a user after validation|       
+| POST | /auth/login  | { created user **no password** }  | Logs inside creates session|
+| GET | /auth/logout  | { message: "Logged out" }  | Logs out, delete session ...|
 |***USER ROUTES***|||
-| POST | /api/user/add-info  | { User }  | Updates User Info |
-| POST | /api/user/adress/:id  | { Adress }  | Updates Adress Info |
-| Delete | /api/user/adress/:id  | { Adress }  | Deletes Adress Info |
-| DELETE | /api/user/delete  | { User }  | Deletes User |
+| POST | /user/add-info  | { User }  | Updates User Info |
+| POST | /user/adress/:id  | { Adress }  | Updates Adress Info |
+| Delete | /user/adress/:id  | { Adress }  | Deletes Adress Info |
+| DELETE | /user/delete  | { User }  | Deletes User |
 |***PRODUCTS ROUTES***|||
-| GET | /api/products  | [ Product ]  | Gets all Products |
-| GET | /api/products/:id  | { Product }  | Gets a Product by ID | 
-| POST | /api/products/:id/create  | { Product }  | Creates a new Product from Template |
-| PATCH | /api/products/:id/update  | { Product }  | Updates a Product by ID | 
+| GET | /products  | [ Product ]  | Gets all Products |
+| GET | /products/:id  | { Product }  | Gets a Product by ID | 
+| POST | /products/:id/create  | { Product }  | Creates a new Product from Template |
+| PATCH | /products/:id/update  | { Product }  | Updates a Product by ID | 
 | DELETE | /api/products/:id/delete  | { Product }  | Deletes a Product by ID | 
 |***SUBSCRIPTION ROUTES***|||
-| POST | /api/subscription-model/create  | { Subscription Model }  | Creates Subscription Model |
-| PATCH | /api/subscription-model/update  | { Subscription Model }  | Updates Subscription Model |
-| DELETE | /api/subscription-model/delete  | { Subscription Model }  | Deletes Subscription Model |
+| POST | /subscription/create  | { Subscription Model }  | Creates Subscription Model |
+| PATCH | /subscription/update  | { Subscription Model }  | Updates Subscription Model |
+| DELETE | /subscription/delete  | { Subscription Model }  | Deletes Subscription Model |
 |***NEWSLETTER ROUTES***|||
-| POST | /api/news-letter/create  | { email }  | Creates email in Newsletter Model |
-| DELETE | /api/news-letter/delete  | { email }  | Deletes email in Newsletter Model |
+| POST | /news-letter/create  | { email }  | Creates email in Newsletter Model |
+| DELETE | /news-letter/delete  | { email }  | Deletes email in Newsletter Model |
 
 
 ## CLIENT ROUTES
 | Endpoint            |            Action        |
 | ------------------- | ------------------------ |
-| / | shows landing-page |
+| / | shows landing-page **if:** user is not loged in **else:** /orders |
 | /login | shows login-page |
-
+| /signup | shows signup-page |
+| /subscriptions | shows all subscriptions |
+| /subscriptions/create | creates custom subscription |
+| /subscriptions/:id | shows all subscriptions by id |
+| /products | shows all products |
+| /products/:id | shows all product by id |
+| /orders | shows signup-page |
+| /profile | shows profile-page |
+| /checkout | shows checkout-page |
 
 ## Model Schema
   ### **User Schema**
