@@ -1,8 +1,8 @@
-# coffee-box
+# snack-box
 
 ## Description
-Coffee Box is a service where you can subscribe to Coffee. Ever week you will get a box full of coffee, that should be enough for another week. 
-We will search for the best coffee fit, after you have answered some basic questions about the coffee you like.
+Snack Box is a service where you can subscribe to snack products. Ever week you will get a box full of snacks, that should be enough for another week. 
+We will search for the best snack fit, after you have answered some basic questions about the snacks you like.
 
 ## UI / UX Design
 ![1-3](https://i.imgur.com/K2L7ba8.png)
@@ -80,13 +80,14 @@ We will search for the best coffee fit, after you have answered some basic quest
   - **password:** hashed
   - **isVerified:** Boolean
   - **adressInfo:** Array of **ObjectIds** from - **Adress Schema**
-  - **coffeeInfo:**
+  - **snackInfo:**
     - **amountPeople:** Number
-    - **cubsPerDay:** Number
-    - **cubsSize:** String
-    - **type:** String
-    - **strongness:** Number ( 0-10 )
+    - **perDay:** Number
+    - **amount:** Number
+    - **types:** Array
+    - **forKids:** Boolean
     - **organic:** Boolean
+    - **fancy:** Boolean
   - **currentSubscription:** ObjectID from - **Subscription Schema** 
   - **status:** 
     - **packBox:**
