@@ -18,8 +18,12 @@ We will search for the best coffee fit, after you have answered some basic quest
   - checkout
   - orders 
   - profile
-  - newsletter signup
+
+## Backlog
+
   - landing page
+  - newsletter signup
+  - admin Panel
 
 
 ## API Routes /api
@@ -64,6 +68,7 @@ We will search for the best coffee fit, after you have answered some basic quest
 | /orders | shows signup-page |
 | /profile | shows profile-page |
 | /checkout | shows checkout-page |
+| /landing | shows landing-page |
 
 ## Model Schema
   ### **User Schema**
