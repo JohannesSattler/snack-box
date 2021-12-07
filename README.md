@@ -144,8 +144,29 @@ We will search for the best snack fit, after you have answered some basic questi
 
 ## API & DATASETS
 
-[Candy Dataset](https://github.com/mansimajithia/ETLProject-Candy-Dataset)
-  
+Best sites: 
+  - [Data World](https://data.world/)
+  - [Kaggle](https://www.kaggle.com/)
+
+[Random Food API](https://app.swaggerhub.com/apis/fdcnal/food-data_central_api/1.0.0#/FDC/getFood)
+[Random Food Dataset](https://fdc.nal.usda.gov/download-datasets.html)
+
+[Candy Dataset1](https://github.com/mansimajithia/ETLProject-Candy-Dataset)
+[Candy Dataset2](https://corgis-edu.github.io/corgis/csv/food/)
+[Candy Dataset3](https://data.world/fivethirtyeight/candy-power-ranking)
+
+[Amazon Products Dataset](https://data.world/promptcloud/amazon-product-dataset-2020/workspace/project-summary?agentid=promptcloud&datasetid=amazon-product-dataset-2020)
+[Myntra Clothes](https://data.world/promptcloud/all-products-from-myntracom-2019/workspace/project-summary?agentid=promptcloud&datasetid=all-products-from-myntracom-2019)
+[Walmart USA product data](https://data.world/promptcloud/walmart-product-data-from-usa)
+
+[OpenFood Dataset Categories](https://world.openfoodfacts.org/categories)
+[OpenFood API](https://wiki.openfoodfacts.org/API/Read)
+
+### OpenFood APi
+
+[All the Snacks](https://world.openfoodfacts.org/category/Snacks.json)
+[Open Food Fact new Doc](https://openfoodfacts.github.io/api-documentation)
+
    
   
 
