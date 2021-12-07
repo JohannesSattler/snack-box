@@ -179,6 +179,8 @@ Best sites:
 
 API all snacks from us: https://us.openfoodfacts.org/api/v2/search?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=snacks&page=2&page_size=50
 
+Api get raw json by produce: https://world.openfoodfacts.org/category/snacks/data-source/database-usda-ndb.json?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=snacks&page=1&page_size=50
+
    
   
 
