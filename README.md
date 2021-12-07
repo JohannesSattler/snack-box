@@ -165,7 +165,10 @@ Best sites:
 ### OpenFood APi
 
 [All the Snacks](https://world.openfoodfacts.org/category/Snacks.json)
+
 [Open Food Fact new Doc](https://openfoodfacts.github.io/api-documentation)
+
+[Search Result Downloader](https://us.openfoodfacts.org/cgi/search.pl)
 
    
   
