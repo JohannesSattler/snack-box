@@ -176,6 +176,9 @@ Best sites:
 
 [Search Result Downloader](https://us.openfoodfacts.org/cgi/search.pl)
 
+
+API all snacks from us: https://us.openfoodfacts.org/api/v2/search?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=snacks&page=2&page_size=50
+
    
   
 
