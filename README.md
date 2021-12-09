@@ -181,6 +181,17 @@ API all snacks from us: https://us.openfoodfacts.org/api/v2/search?action=proces
 
 Api get raw json by produce: https://world.openfoodfacts.org/category/snacks/data-source/database-usda-ndb.json?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=snacks&page=1&page_size=50
 
+## Other Stuff
+
+[DHL API - for tracking delivery](https://developer.dhl.com/api-reference/shipment-tracking#get-started-section/)
+
+[Node Mailer - for email verification & newsleter](https://www.npmjs.com/package/nodemailer)
+
+[Paypal Api](https://developer.paypal.com/docs/api/overview/)
+
+[Stripe Api](https://stripe.com/docs/stripe-js/react)
+
+
    
   
 
